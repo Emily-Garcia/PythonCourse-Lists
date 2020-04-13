@@ -3,23 +3,23 @@
 #por cada nombre en la lista se va a ejecutar la funcion
 #todo esto tambien tenerlo en una funcion
 
-lista = {
-    "Arturo",
-    "Melo",
-    "Topi"
-}
-
 #por cada nombre llamar funcion que muetre el nombre
 
 #la primer funcion va a tener nuestra lista y la logica para llamar la segunda funcion
 
 #la segunda funcion va a imprimir un nombre
 
-def lista_nombres():
-    imprimir_nombre()
+def mostrar_nombre(nombre):
+    print(nombre)
 
-def imprimir_nombre():
+def nombres():
+    lista = [
+        "Arturo",
+        "Melo",
+        "Topi"
+    ]
+
     for nombre in lista:
-        print(nombre)
+        mostrar_nombre(nombre)
 
-lista_nombres()
+nombres()
